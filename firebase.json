@@ -1,0 +1,50 @@
+{
+  "flutter": {
+    "platforms": {
+      "ios": {
+        "default": {
+          "projectId": "budget-ai-cf437",
+          "appId": "1:411334115364:ios:d4001b7af7fa3e1c9c58b1",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "budget-ai-cf437",
+          "appId": "1:411334115364:ios:d4001b7af7fa3e1c9c58b1",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "budget-ai-cf437",
+          "configurations": {
+            "ios": "1:411334115364:ios:d4001b7af7fa3e1c9c58b1",
+            "macos": "1:411334115364:ios:d4001b7af7fa3e1c9c58b1",
+            "web": "1:411334115364:web:44d401818c0dea449c58b1"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint",
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ]
+}
