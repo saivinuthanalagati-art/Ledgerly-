@@ -1,4 +1,4 @@
-# budget_ai
+# Ledgerly
 
 A new Flutter project.
 
